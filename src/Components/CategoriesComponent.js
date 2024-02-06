@@ -1,7 +1,8 @@
-function CategoriesComponent() {
+function CategoriesComponent({setStatus}) {
     return (
         <div>
-            CategoriesComponent
+            <p>CategoriesComponent</p>
+            <button onClick={() => {setStatus("Question")}}> Commencer </button>
         </div>
     );
 }

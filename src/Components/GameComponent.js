@@ -1,7 +1,24 @@
+import React from 'react';
+
+import MembersComponent from "./MembersComponent"
+import CategoriesComponent from "./CategoriesComponent"
+import QuestionsComponent from "./QuestionsComponent"
+
 function GameComponent() {
+
+    const [status, setStatus] = React.useState("CreatePlayer");
+    const [player, setPlayer] = React.useState([]);
+
     return (
         <div>
-            GameComponent
+            {
+                status === "CreatePlayer" ?
+                    <MembersComponent setStatus={setStatus} setPlayer={setPlayer} />
+                : status === "ChooseCategories" ?
+                    <CategoriesComponent setStatus={setStatus} />
+                :
+                    <QuestionsComponent setStatus={setStatus} />
+            }
         </div>
     );
 }

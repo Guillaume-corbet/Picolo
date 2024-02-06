@@ -1,9 +1,10 @@
 import './App.css';
+import GameComponent from './Components/GameComponent';
 
 function App() {
     return (
         <div>
-            Oui
+            <GameComponent />
         </div>
     );
 }

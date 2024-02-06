@@ -1,7 +1,8 @@
-function MembersComponent() {
+function MembersComponent({setStatus, setPlayer}) {
     return (
         <div>
-            MembersComponent
+            <p>MembersComponent</p>
+            <button onClick={() => {setStatus("ChooseCategories")}}> Suivant </button>
         </div>
     );
 }
