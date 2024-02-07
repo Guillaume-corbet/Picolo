@@ -13,7 +13,7 @@ function GameComponent() {
         <div>
             {
                 status === "CreatePlayer" ?
-                    <MembersComponent setStatus={setStatus} setPlayer={setPlayer} />
+                    <MembersComponent setStatus={setStatus} setPlayer={setPlayer} player={player}/>
                 : status === "ChooseCategories" ?
                     <CategoriesComponent setStatus={setStatus} />
                 :
