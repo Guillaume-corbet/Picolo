@@ -8,6 +8,7 @@ function GameComponent() {
 
     const [status, setStatus] = React.useState("CreatePlayer");
     const [player, setPlayer] = React.useState([]);
+    const [categories, setCategories] = React.useState("");
 
     return (
         <div>
@@ -15,9 +16,9 @@ function GameComponent() {
                 status === "CreatePlayer" ?
                     <MembersComponent setStatus={setStatus} setPlayer={setPlayer} player={player}/>
                 : status === "ChooseCategories" ?
-                    <CategoriesComponent setStatus={setStatus} />
+                    <CategoriesComponent setStatus={setStatus} setCategories={setCategories} categories={categories} />
                 :
-                    <QuestionsComponent setStatus={setStatus} />
+                    <QuestionsComponent categories={categories} players={player} />
             }
         </div>
     );

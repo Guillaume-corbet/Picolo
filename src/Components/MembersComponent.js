@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Button, TextField } from "@mui/material";
 
 function MembersComponent({setStatus, setPlayer, player}) {
