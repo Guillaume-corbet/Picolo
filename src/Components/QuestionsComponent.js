@@ -9,9 +9,10 @@ function QuestionsComponent({categories, players}) {
     const [data, setData] = React.useState(_.cloneDeep(allData[categories]));
     const [winSip, setWinSip] = React.useState(1)
     const [loseSip, setLoseSip] = React.useState(1)
-    const [difficulty, setDifficulty] = React.useState(1)
+    const [difficulty, setDifficulty] = React.useState(0)
     const [goodRules, setGoodRules] = React.useState("")
     const [nb, setNb] = React.useState(-1)
+    const [questionStatus, setQuestionStatus] = React.useState("playing")
 
     const generateRandomInteger = (min, max) => {
         const minCeiled = Math.ceil(min);
@@ -49,17 +50,30 @@ function QuestionsComponent({categories, players}) {
 
     const nextQuestion = () => {
         let newNb = 0
-        if (nb + 1 === data["difficulty"][0].length) {
+        let newDifficulty = difficulty
+        if (nb + 1 === data["difficulty"][newDifficulty].length || nb + 1 > 19) {
             setNb(0)
+            setDifficulty(difficulty + 1)
+            newDifficulty = difficulty + 1
+            while (newDifficulty < 5 && data["difficulty"][newDifficulty].length == 0) {
+                newDifficulty = newDifficulty + 1
+                setDifficulty(newDifficulty)
+                if (newDifficulty == 5)
+                    break
+            }
         } else {
             setNb(nb + 1)
             newNb = nb + 1
         }
-        let newWinSip = generateRandomInteger(data["difficulty"][0][newNb].min_Sip_Win, data["difficulty"][0][newNb].max_Sip_Win)
-        let newLoseSip = generateRandomInteger(data["difficulty"][0][newNb].min_Sip_Lose, data["difficulty"][0][newNb].max_Sip_Lose)
+        if (newDifficulty == 5) {
+            setQuestionStatus("end")
+            return;
+        }
+        let newWinSip = generateRandomInteger(data["difficulty"][newDifficulty][newNb].min_Sip_Win, data["difficulty"][newDifficulty][newNb].max_Sip_Win)
+        let newLoseSip = generateRandomInteger(data["difficulty"][newDifficulty][newNb].min_Sip_Lose, data["difficulty"][newDifficulty][newNb].max_Sip_Lose)
         setWinSip(newWinSip)
         setLoseSip(newLoseSip)
-        setGoodRules(changeRules(data["difficulty"][0][newNb].rules, players, newWinSip, newLoseSip))
+        setGoodRules(changeRules(data["difficulty"][newDifficulty][newNb].rules, players, newWinSip, newLoseSip))
     }
 
     React.useEffect(() => {
@@ -68,8 +82,18 @@ function QuestionsComponent({categories, players}) {
 
     return (
         <div>
-            {goodRules}
-            <Button variant="contained" onClick={() => {nextQuestion()}}>Question suivante</Button>
+            {
+                questionStatus == "playing" ?
+                    <div>
+                        <p>Difficulty : {difficulty + 1}</p>
+                        <br></br>
+                        <p>{goodRules}</p>
+                        <br></br>
+                        <Button variant="contained" onClick={() => {nextQuestion()}}>Question suivante</Button>
+                    </div>
+                :
+                    <p>END</p>
+            }
         </div>
     );
 }
