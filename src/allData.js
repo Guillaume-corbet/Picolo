@@ -4,7 +4,7 @@ const allData = {
             //difficulty_1
             [
                 {
-                    "rules": "{NAME_1} choisis qui est la personne la plus drole parmis {NAME_2} {NAME_3}, cette personne donnera {SHOT_WIN} à qui elle veut",
+                    "rules": "{NAME_1} choisis qui est la personne la plus drole parmis {NAME_2} {NAME_3}, cette personne donnera {SHOT_WIN} gorgées à qui elle veut",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,
@@ -15,7 +15,7 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "{NAME_1} choisis qui est la personne la plus belle parmis {NAME_2} {NAME_3}, Rayan Goesling donnera {SHOT_WIN} à qui elle veut",
+                    "rules": "{NAME_1} choisis qui est la personne la plus belle parmis {NAME_2} {NAME_3}, Rayan Goesling donnera {SHOT_WIN} gorgées à qui elle veut",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,
@@ -26,7 +26,7 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "{NAME_1} choisis qui est la personne la plus intelligente parmis {NAME_2} {NAME_3}, Terence Tao donnera {SHOT_WIN} à qui elle veut",
+                    "rules": "{NAME_1} choisis qui est la personne la plus intelligente parmis {NAME_2} {NAME_3}, Terence Tao donnera {SHOT_WIN} gorgées à qui elle veut",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,
@@ -644,11 +644,11 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "Ceux qui l'on déjà fait en voiture vous prenez {SHOT_LOSE} gorgées\n Sébastien Loeb en distribue 4 si c'était la voiture de sa partenaire",
+                    "rules": "Ceux qui l'on déjà fait en voiture vous prenez {SHOT_LOSE} gorgées\n Sébastien Loeb en distribue {SHOT_LOSE} si c'était la voiture de sa partenaire",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
-                    "max_Sip_Lose": 0,
-                    "min_Sip_Lose": 0,
+                    "max_Sip_Lose": 5,
+                    "min_Sip_Lose": 1,
                     "difficulty": 1,
                     "player_Min": 2,
                     "player_Max": 8,
@@ -1082,7 +1082,7 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "Virus: Galoche des rois 👑: les gars élisent un roi et les filles une reine. Dès qu'un verre est fini le roi et la reine s'embrassent {SHOT_WIN} en cas d'oublie/refus",
+                    "rules": "Virus: Galoche des rois 👑: les gars élisent un roi et les filles une reine. Dès qu'un verre est fini le roi et la reine s'embrassent {SHOT_WIN} gorgées en cas d'oublie/refus",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,
@@ -1162,7 +1162,7 @@ const allData = {
             //difficulty_5
             [
                 {
-                    "rules": "{NAME_1} biffle son voisin de droite.\n Si la personne s'évanouis elle prendra {SHOT_WIN} gorgées à son reveil",
+                    "rules": "{NAME_1} biffle son voisin de droite {SHOT_WIN} en cas de refus.\n Si la personne s'évanouis elle prendra {SHOT_LOSE} gorgées à son reveil",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,

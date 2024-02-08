@@ -49,17 +49,17 @@ function QuestionsComponent({categories, players}) {
 
     const nextQuestion = () => {
         let newNb = 0
-        if (nb + 1 === data.length) {
+        if (nb + 1 === data["difficulty"][0].length) {
             setNb(0)
         } else {
             setNb(nb + 1)
             newNb = nb + 1
         }
-        let newWinSip = generateRandomInteger(data[newNb].min_Sip_Win, data[newNb].max_Sip_Win)
-        let newLoseSip = generateRandomInteger(data[newNb].min_Sip_Lose, data[newNb].max_Sip_Lose)
+        let newWinSip = generateRandomInteger(data["difficulty"][0][newNb].min_Sip_Win, data["difficulty"][0][newNb].max_Sip_Win)
+        let newLoseSip = generateRandomInteger(data["difficulty"][0][newNb].min_Sip_Lose, data["difficulty"][0][newNb].max_Sip_Lose)
         setWinSip(newWinSip)
         setLoseSip(newLoseSip)
-        setGoodRules(changeRules(data[newNb].rules, players, newWinSip, newLoseSip))
+        setGoodRules(changeRules(data["difficulty"][0][newNb].rules, players, newWinSip, newLoseSip))
     }
 
     React.useEffect(() => {
