@@ -1,0 +1,13 @@
+/* Rectangle pour écriture */
+  .gameQuestion {
+    font-size: large;
+    width: 1400px;
+    height: 330px;
+    border-radius: 50px;
+    background-color: rgba(126, 149, 145, 1);
+    color: white;
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }

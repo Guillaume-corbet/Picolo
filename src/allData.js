@@ -655,7 +655,7 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "Votez pour le joueur que vous supposer être le meilleur coup au lit: Ferrara distribue {SHOT_LOSE} gorgées\n Manu ajoute 2 gorgées aux joueurs s'il est partant pour lui montrer si c'est le cas ",
+                    "rules": "Votez pour le joueur que vous supposer être le meilleur coup au lit: Ferrara distribue {SHOT_WIN} gorgées\n Manu ajoute 2 gorgées aux joueurs s'il est partant pour lui montrer si c'est le cas ",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,

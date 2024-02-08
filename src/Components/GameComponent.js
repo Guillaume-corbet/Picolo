@@ -12,7 +12,7 @@ function GameComponent() {
     const [categories, setCategories] = React.useState("");
 
     return (
-        <div>
+        <div className='gameFond'>
             {
                 status === "CreatePlayer" ?
                     <MembersComponent setStatus={setStatus} setPlayer={setPlayer} player={player}/>

@@ -1,5 +1,6 @@
 import React from "react";
 import _, { random } from 'lodash'
+import "../Style/QuestionComponent.css";
 
 import allData from '../allData.js'
 import { Button } from "@mui/material";
@@ -40,10 +41,10 @@ function QuestionsComponent({categories, players}) {
     const changeRules = (rules, players, newWinSip, newLoseSip) => {
         let choosenPlayer = choosePlayer(players, countPlayer(rules))
         let newRules = rules
-        newRules = newRules.replace("{SHOT_WIN}", newWinSip)
-        newRules = newRules.replace("{SHOT_LOSE}", newLoseSip)
+        newRules = newRules.replaceAll("{SHOT_WIN}", newWinSip)
+        newRules = newRules.replaceAll("{SHOT_LOSE}", newLoseSip)
         for (let x = 0;x < choosenPlayer.length; x++) {
-            newRules = newRules.replace("{NAME_" + (x + 1) + "}", choosenPlayer[x])
+            newRules = newRules.replaceAll("{NAME_" + (x + 1) + "}", choosenPlayer[x])
         }
         return (newRules)
     }
@@ -83,7 +84,7 @@ function QuestionsComponent({categories, players}) {
     },[])
 
     return (
-        <div>
+        <div className='gameQuestion'>
             {
                 questionStatus == "playing" ?
                     <div>
@@ -93,6 +94,8 @@ function QuestionsComponent({categories, players}) {
                         <br></br>
                         <Button variant="contained" onClick={() => {nextQuestion()}}>Question suivante</Button>
                     </div>
+                : questionStatus == "difficulty" ?
+                    <p>difficulty</p>
                 :
                     <p>END</p>
             }
