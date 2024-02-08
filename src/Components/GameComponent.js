@@ -19,7 +19,7 @@ function GameComponent() {
                 : status === "ChooseCategories" ?
                     <CategoriesComponent setStatus={setStatus} setCategories={setCategories} categories={categories} />
                 :
-                    <QuestionsComponent categories={categories} players={player} />
+                    <QuestionsComponent categories={categories} players={player} setStatus={setStatus} />
             }
         </div>
     );

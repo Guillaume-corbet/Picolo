@@ -5,7 +5,7 @@ import "../Style/QuestionComponent.css";
 import allData from '../allData.js'
 import { Button } from "@mui/material";
 
-function QuestionsComponent({categories, players}) {
+function QuestionsComponent({categories, players, setStatus}) {
 
     const [data, setData] = React.useState(_.cloneDeep(allData[categories]));
     const [winSip, setWinSip] = React.useState(1)
@@ -53,6 +53,7 @@ function QuestionsComponent({categories, players}) {
         let newNb = 0
         let newDifficulty = difficulty
         if (data["difficulty"][newDifficulty].length == 0 || nb + 1 > 19) {
+            setQuestionStatus("difficulty")
             setNb(0)
             setDifficulty(difficulty + 1)
             newDifficulty = difficulty + 1
@@ -95,10 +96,21 @@ function QuestionsComponent({categories, players}) {
                         <Button variant="contained" onClick={() => {nextQuestion()}}>Question suivante</Button>
                     </div>
                 : questionStatus == "difficulty" ?
-                    <p>difficulty</p>
+                    <div>
+                        <p>Changement de difficulté</p>
+                        <Button variant="contained" onClick={() => {setQuestionStatus("playing")}} >Continuer</Button>
+                    </div>
                 :
-                    <p>END</p>
+                    <div>
+                        <p>Partie fini j'espère que vous avez bien bu et kiffer jouer à ce jeu. Penser à nous ajouter sur instagram:</p>
+                        <br></br>
+                        <a href="https://www.instagram.com/guillaume_corbet_/">Guillaume</a>
+                        <br></br>
+                        <br></br>
+                        <a href="https://www.instagram.com/guahblyat/">Gabriel</a>
+                    </div>
             }
+            <Button variant="contained" onClick={() => {setStatus("CreatePlayer")}}>Acceuil</Button>
         </div>
     );
 }
