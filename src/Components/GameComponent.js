@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Style/GameComponent.css";
 
 import MembersComponent from "./MembersComponent"
 import CategoriesComponent from "./CategoriesComponent"

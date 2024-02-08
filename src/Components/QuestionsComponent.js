@@ -1,5 +1,5 @@
 import React from "react";
-import _ from 'lodash'
+import _, { random } from 'lodash'
 
 import allData from '../allData.js'
 import { Button } from "@mui/material";
@@ -51,7 +51,7 @@ function QuestionsComponent({categories, players}) {
     const nextQuestion = () => {
         let newNb = 0
         let newDifficulty = difficulty
-        if (nb + 1 === data["difficulty"][newDifficulty].length || nb + 1 > 19) {
+        if (data["difficulty"][newDifficulty].length == 0 || nb + 1 > 19) {
             setNb(0)
             setDifficulty(difficulty + 1)
             newDifficulty = difficulty + 1
@@ -59,7 +59,7 @@ function QuestionsComponent({categories, players}) {
                 newDifficulty = newDifficulty + 1
                 setDifficulty(newDifficulty)
                 if (newDifficulty == 5)
-                    break
+                break
             }
         } else {
             setNb(nb + 1)
@@ -69,11 +69,13 @@ function QuestionsComponent({categories, players}) {
             setQuestionStatus("end")
             return;
         }
-        let newWinSip = generateRandomInteger(data["difficulty"][newDifficulty][newNb].min_Sip_Win, data["difficulty"][newDifficulty][newNb].max_Sip_Win)
-        let newLoseSip = generateRandomInteger(data["difficulty"][newDifficulty][newNb].min_Sip_Lose, data["difficulty"][newDifficulty][newNb].max_Sip_Lose)
+        let randomNumber = generateRandomInteger(0, data["difficulty"][newDifficulty].length - 1)
+        let newWinSip = generateRandomInteger(data["difficulty"][newDifficulty][randomNumber].min_Sip_Win, data["difficulty"][newDifficulty][randomNumber].max_Sip_Win)
+        let newLoseSip = generateRandomInteger(data["difficulty"][newDifficulty][randomNumber].min_Sip_Lose, data["difficulty"][newDifficulty][randomNumber].max_Sip_Lose)
         setWinSip(newWinSip)
         setLoseSip(newLoseSip)
-        setGoodRules(changeRules(data["difficulty"][newDifficulty][newNb].rules, players, newWinSip, newLoseSip))
+        setGoodRules(changeRules(data["difficulty"][newDifficulty][randomNumber].rules, players, newWinSip, newLoseSip))
+        data["difficulty"][newDifficulty].splice(randomNumber, 1)
     }
 
     React.useEffect(() => {

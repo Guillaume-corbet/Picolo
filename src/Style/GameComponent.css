@@ -1,0 +1,29 @@
+/* Board */
+.board {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 0px;
+    padding: 0px;
+    flex-wrap: nowrap;
+  }
+  
+  /* Fond */
+  .rectangle {
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(225, 254, 197, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  
+  /* Rectangle pour écriture */
+  .rectangle {
+    width: 1400px;
+    height: 330px;
+    border-radius: 50px;
+    background-color: rgba(126, 149, 145, 1);
+  }
