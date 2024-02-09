@@ -610,7 +610,7 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "Pose une question de bâtard a {NAME_1} et prend {SHOT_WIN} gorgées",
+                    "rules": "{NAME_2} pose une question de batârd a {NAME_1} et prend {SHOT_WIN} gorgées",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,
@@ -630,7 +630,7 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "Bras de fer entre {NAME_1} et {NAME_2}: Mike Tyson distribue",
+                    "rules": "Bras de fer entre {NAME_1} et {NAME_2}: Mike Tyson distribue {SHOT_WIN} gorgées",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,
@@ -669,7 +669,166 @@ const allData = {
                     "player_Max": 8,
                     "even": null
                 },
-                
+                {
+                    "rules": "{NAME_1} et {NAME_2} se tapent les mains, le premier qui arrête prends {SHOT_WIN} gorgées",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} va mordre {NAME_2} ou prends {SHOT_WIN} gorgées espèce de relou",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "Le premier qui fait 10 pompes distribue {SHOT_WIN} gorgées, si t'es asiat, on parle de push-up pas de Nike",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} va te brosser les dents avec de la moutarde ou prend {SHOT_WIN} gorgées",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} si tu retiens ta respiration pendant plus longtemps que {NAME_2} alors celui-ci se prends une patate de forain en guise de féssée par {NAME_3}",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 3,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} tu es le tableau veleda de la soirée, tout le monde te dessine un petit trucs sur toi, si tu reconnais pas le dessin alors le dessinateur prend {SHOT_WIN} gorgées",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} fais comme chez toi, va taper dans le frigo de ton hôte",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": " Pendant 4 questions {NAME_1} est la méduse dans les yeux, si tu le regarde tu ne te prétrifie pas mais tu prends {SHOT_WIN} gorgées",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} est père castor, il raconte une excellente anecdote, les joueurs pour le remercier le note en buvant entre 1 et 10 gorgées",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "A tour de rôle vous allez balancer un dossier sur votre partenaire de droite, les joueurs qui ont déjà fait ou vécu la même chose boivent {SHOT_WIN} gorgées, {NAME_1} commence",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} à un mois pour acccomplir les actions que les joueurs te donnerons, si tu n'y arrive pas, à la prochaine soirée tu ramène à boire",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} imite {NAME_2}, si le jury est convaincu alors {NAME_1} distribue {SHOT_WIN} gorgées sinon c'est {NAME_2} qui les distibue",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} casse un glaçon avec ta tête ou prend {SHOT_WIN} gorgées",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} appelle le premier contact de ton historique d'appel, si ça décroche c'est cul sec pour toi sinon distibue le",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} crie 'KIKIIIII' par la fenêtre sinon prend {SHOT_WIN} gorgée, si jamais il devait y avoir une réponse d'un passant, alors {NAME_1} les distribuent",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} donne son téléphone à {NAME_2}, pas le droit de le dévérouiller, sauf pour aller ouvrir les applications qui ont envoyé une notification",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
             ],
             //difficulty_2
             [
