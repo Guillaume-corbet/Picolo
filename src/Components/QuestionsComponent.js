@@ -101,16 +101,18 @@ function QuestionsComponent({categories, players, setStatus}) {
                         <Button variant="contained" onClick={() => {setQuestionStatus("playing")}} >Continuer</Button>
                     </div>
                 :
-                    <div>
+                    <div className="endAccueil">
                         <p>Partie fini j'espère que vous avez bien bu et kiffer jouer à ce jeu. Penser à nous ajouter sur instagram:</p>
                         <br></br>
                         <a href="https://www.instagram.com/guillaume_corbet_/">Guillaume</a>
                         <br></br>
                         <br></br>
                         <a href="https://www.instagram.com/guahblyat/">Gabriel</a>
+                        <br></br>
+                        <br></br>
                     </div>
             }
-            <Button variant="contained" onClick={() => {setStatus("CreatePlayer")}}>Acceuil</Button>
+            <Button variant="contained" onClick={() => {setStatus("CreatePlayer")}}>Accueil</Button>
         </div>
     );
 }

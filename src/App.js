@@ -3,7 +3,7 @@ import GameComponent from './Components/GameComponent';
 
 function App() {
     return (
-        <div>
+        <div className="gameFond">
             <GameComponent />
         </div>
     );
