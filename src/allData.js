@@ -475,6 +475,86 @@ const allData = {
                     "player_Min": 2,
                     "player_Max": 8,
                     "even": null
+                },
+                {
+                    "rules": "Si tu suis one pièce a fond tu prends {SHOT_WIN} gorgées mon quoikoubaka",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "Si au plus tu avances dans mes études tu te dis que 'Finalement un onlyfan sur mes pieds,c'est pas si mal' tu prends {SHOT_WIN} gorgées",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "Si tu rigoles quand il y a un prout tu distribue {SHOT_WIN} gorgées",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "Si tu as déjà pété pendant l'acte, singed prendra {SHOT_WIN} gorgées",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "Les marques de voiture : celui qui répète ou n'as pas d'idée prend {SHOT_WIN} gorgées,{NAME_1} commence",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "Les marques de maquillage : celui qui répète ou n'as pas d'idée prend {SHOT_WIN} gorgées,{NAME_1} commence",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "Les fruits et légume de babosse de fils de pute: celui qui répète ou n'as pas d'idée prend {SHOT_WIN} gorgées,{NAME_1} commence",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} met une chanson ceux qui aiment boivent {SHOT_WIN} gorgées et ceux qui n'aiment pas les distribuent ",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
                 }
             ],
             //difficulty_2
@@ -510,36 +590,6 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "Si tu suis one pièce a fond tu prends {SHOT_WIN} gorgées mon quoikoubaka",
-                    "max_Sip_Win": 5,
-                    "min_Sip_Win": 1,
-                    "max_Sip_Lose": 0,
-                    "min_Sip_Lose": 0,
-                    "player_Min": 2,
-                    "player_Max": 8,
-                    "even": null
-                },
-                {
-                    "rules": "Si au plus tu avances dans mes études tu te dis que 'Finalement un onlyfan sur mes pieds,c'est pas si mal' tu prends {SHOT_WIN} gorgées",
-                    "max_Sip_Win": 5,
-                    "min_Sip_Win": 1,
-                    "max_Sip_Lose": 0,
-                    "min_Sip_Lose": 0,
-                    "player_Min": 2,
-                    "player_Max": 8,
-                    "even": null
-                },
-                {
-                    "rules": "Si tu rigoles quand il y a un prout tu distribue {SHOT_WIN} gorgées",
-                    "max_Sip_Win": 5,
-                    "min_Sip_Win": 1,
-                    "max_Sip_Lose": 0,
-                    "min_Sip_Lose": 0,
-                    "player_Min": 2,
-                    "player_Max": 8,
-                    "even": null
-                },
-                {
                     "rules": " {NAME_1} laisse son téléphone à ses potes ou prends cul sec",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
@@ -551,16 +601,6 @@ const allData = {
                 },
                 {
                     "rules": " {NAME_1} essaye de mettre par terre {NAME_2}, si tu gagnes distribue {SHOT_WIN} gorgées gros baiseur",
-                    "max_Sip_Win": 5,
-                    "min_Sip_Win": 1,
-                    "max_Sip_Lose": 0,
-                    "min_Sip_Lose": 0,
-                    "player_Min": 2,
-                    "player_Max": 8,
-                    "even": null
-                },
-                {
-                    "rules": "Si tu as déjà pété pendant l'acte, singed prendra {SHOT_WIN} gorgées",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,
@@ -600,26 +640,6 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "Les marques de voiture : celui qui répète ou n'as pas d'idée prend {SHOT_WIN} gorgées,{NAME_1} commence",
-                    "max_Sip_Win": 5,
-                    "min_Sip_Win": 1,
-                    "max_Sip_Lose": 0,
-                    "min_Sip_Lose": 0,
-                    "player_Min": 2,
-                    "player_Max": 8,
-                    "even": null
-                },
-                {
-                    "rules": "Les marques de maquillage : celui qui répète ou n'as pas d'idée prend {SHOT_WIN} gorgées,{NAME_1} commence",
-                    "max_Sip_Win": 5,
-                    "min_Sip_Win": 1,
-                    "max_Sip_Lose": 0,
-                    "min_Sip_Lose": 0,
-                    "player_Min": 2,
-                    "player_Max": 8,
-                    "even": null
-                },
-                {
                     "rules": "Les marques d'alcool: celui qui répète ou n'as pas d'idée prend {SHOT_WIN} gorgées,{NAME_1} commence",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
@@ -630,27 +650,7 @@ const allData = {
                     "even": null
                 },
                 {
-                    "rules": "Les fruits et légume de babosse de fils de pute: celui qui répète ou n'as pas d'idée prend {SHOT_WIN} gorgées,{NAME_1} commence",
-                    "max_Sip_Win": 5,
-                    "min_Sip_Win": 1,
-                    "max_Sip_Lose": 0,
-                    "min_Sip_Lose": 0,
-                    "player_Min": 2,
-                    "player_Max": 8,
-                    "even": null
-                },
-                {
                     "rules": "Tout le monde pointe du doigt le joueur qui a pété, miss boite a prout prend {SHOT_WIN} gorgées",
-                    "max_Sip_Win": 5,
-                    "min_Sip_Win": 1,
-                    "max_Sip_Lose": 0,
-                    "min_Sip_Lose": 0,
-                    "player_Min": 2,
-                    "player_Max": 8,
-                    "even": null
-                },
-                {
-                    "rules": "{NAME_1} met une chanson ceux qui aiment boivent {SHOT_WIN} gorgées et ceux qui n'aiment pas les distribuent ",
                     "max_Sip_Win": 5,
                     "min_Sip_Win": 1,
                     "max_Sip_Lose": 0,
