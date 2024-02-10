@@ -1524,6 +1524,17 @@ const allData = {
                     "player_Max": 8,
                     "even": null
                 },
+                {
+                    "rules": "{NAME_1} donne un gage à {NAME_2}, {SHOT_WIN} gorgées en cas de refus",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 5,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                }
             ]
         ]
     }
