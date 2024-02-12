@@ -1259,6 +1259,39 @@ const allData = {
                     "player_Max": 8,
                     "even": null
                 },
+                {
+                    "rules": "VIRUS: {NAME_1} dois boire {SHOT_WIN} gorgées à chaque fois que quelqu'un dit ton prénom",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} quel est le lieu le plus inhabituel où tu as eu des relations sexuelles ?",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} quelle est la chose la plus folle que tu as déjà faite par amour ?",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
             ],
             //difficulty_2
             [
@@ -1327,6 +1360,83 @@ const allData = {
                     "max_Sip_Lose": 0,
                     "min_Sip_Lose": 0,
                     "difficulty": 3,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "Tous les participants doivent échanger un vêtement avec celui à leur gauche, {SHOT_WIN} en cas de refus",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} imite le bruit le plus sexy que tu puisses imaginer, {SHOT_WIN} en cas de refus",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} raconte une histoire érotique en moins de 60 secondes",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} écrit un message coquin à une personne de ton choix sur ton téléphone et envoie le",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} quelle est le plus grand secret que tu caches à tes partenaires secuels",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "VIRUS: A chaque fois que quelqu'un prononce le mot 'Amour' il doit boire {SHOT_WIN}",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} as tu déjà eu un fantasme sur quelqu'un dans cette pièce, si oui raconte le, {SHOT_WIN} en cas de refus",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
                     "player_Min": 2,
                     "player_Max": 8,
                     "even": null
@@ -1477,6 +1587,51 @@ const allData = {
                     "player_Max": 8,
                     "even": null
                 },
+                {
+                    "rules": "{NAME_1} fait un baiser passionné à la personne à ta droite, {SHOT_WIN} gorgées en cas de refus",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 4,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "VIRUS: dès qu'un joueur dis un mot vulgaire, il boit {SHOT_WIN} ou enlève un vêtement",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 4,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} joue in jeu de rôle érotique avec {NAME_2}, {SHOT_WIN} en cas de refus",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 4,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                {
+                    "rules": "{NAME_1} fait un pierre/feuille/ciseau avec {NAME_2} le perdant enlève un vêtement, {SHOT_WIN} en cas de refus",
+                    "max_Sip_Win": 5,
+                    "min_Sip_Win": 1,
+                    "max_Sip_Lose": 0,
+                    "min_Sip_Lose": 0,
+                    "difficulty": 1,
+                    "player_Min": 2,
+                    "player_Max": 8,
+                    "even": null
+                },
+                
             ],
             //difficulty_5
             [
