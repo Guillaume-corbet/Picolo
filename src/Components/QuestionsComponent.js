@@ -7,7 +7,25 @@ import { Button } from "@mui/material";
 
 function QuestionsComponent({categories, players, setStatus}) {
 
-    const [data, setData] = React.useState(_.cloneDeep(allData[categories]));
+    const initData = (data, players, categories) => {
+        let newData = _.cloneDeep(data[categories])
+        let x = 0
+        let y = 0
+        while (x < newData['difficulty'].length) {
+            while (y < newData['difficulty'][x].length) {
+                if (players.length > newData['difficulty'][x][y]['player_Max'] || players.length < newData['difficulty'][x][y]['player_Min']) {
+                    console.log("data removed")
+                    newData['difficulty'][x].splice(y, 1)
+                    y = y - 1
+                }
+                y = y + 1
+            }
+            x = x + 1;
+        }
+        return (newData)
+    }
+
+    const [data, setData] = React.useState(initData(allData, players, categories));
     const [winSip, setWinSip] = React.useState(1)
     const [loseSip, setLoseSip] = React.useState(1)
     const [difficulty, setDifficulty] = React.useState(0)
