@@ -35,14 +35,20 @@ function QuestionsComponent({categories, players, setStatus}) {
             copyPlayers.splice(nb, 1)
             x = x + 1
         }
-        return (choosenPlayer)
+         return (choosenPlayer)
     }
 
     const changeRules = (rules, players, newWinSip, newLoseSip) => {
         let choosenPlayer = choosePlayer(players, countPlayer(rules))
         let newRules = rules
-        newRules = newRules.replaceAll("{SHOT_WIN}", newWinSip)
-        newRules = newRules.replaceAll("{SHOT_LOSE}", newLoseSip)
+        if (newWinSip > 1)
+            newRules = newRules.replaceAll("{SHOT_WIN}", newWinSip + " gorgées")
+        else
+            newRules = newRules.replaceAll("{SHOT_WIN}", newWinSip + " gorgée")
+        if (newLoseSip > 1)
+            newRules = newRules.replaceAll("{SHOT_LOSE}", newLoseSip + " gorgées")
+        else
+            newRules = newRules.replaceAll("{SHOT_LOSE}", newLoseSip + " gorgée")
         for (let x = 0;x < choosenPlayer.length; x++) {
             newRules = newRules.replaceAll("{NAME_" + (x + 1) + "}", choosenPlayer[x])
         }
